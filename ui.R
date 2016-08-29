@@ -15,8 +15,13 @@ shinyUI(fluidPage(
     
     mainPanel(
       h3(textOutput("caption")),
-      
-      plotOutput("pricePlot")
+      plotOutput("pricePlot"),
+      fluidRow(includeMarkdown("Documentation.md")),
+      a(href="https://github.com/RogierWijsman/HousingApp","Go to: GitHub Repository of this project")
+      )
     )
   )
-))
+)
+
+
+
