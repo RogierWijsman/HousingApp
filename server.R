@@ -5,7 +5,6 @@ library(datasets)
 housingData <- readRDS("data/HousingData.rds")
 
 
-
 shinyServer(function(input, output) {
   
 
